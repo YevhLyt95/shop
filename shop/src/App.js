@@ -12,7 +12,7 @@ class App extends React.Component {
         {
           id: 1,
           title: 'Chair',
-          img: '',
+          img: 'chair.jpg',
           desc: 'Lorem ipsum dolor sit amet',
           category: 'chairs',
           price: '49.9'
@@ -20,7 +20,7 @@ class App extends React.Component {
         {
           id: 2,
           title: 'Table',
-          img: '',
+          img: 'table.jpg',
           desc: 'Lorem ipsum dolor sit amet',
           category: 'tables',
           price: '100.9'
@@ -28,7 +28,7 @@ class App extends React.Component {
         {
           id: 3,
           title: 'Lamp',
-          img: '',
+          img: 'lamp.jpg',
           desc: 'Lorem ipsum dolor sit amet',
           category: 'lamps',
           price: '2.9'

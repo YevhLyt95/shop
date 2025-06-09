@@ -1,67 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #fff;
   color: #222;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-.wrapper{
+
+.wrapper {
   width: 1280px;
   margin: 50px auto;
 }
 
-header{
+header {
   position: relative;
 }
 
-header .logo{
+header .logo {
   font-weight: 600;
   font-size: 20px;
 }
-header ul.nav{
+
+header ul.nav {
   float: right;
   list-style: none;
 }
-header ul.nav li{
+
+header ul.nav li {
   display: inline;
   margin-left: 25px;
   cursor: pointer;
   transition: opacity 500ms ease;
 }
-header ul.nav li:hover{
+
+header ul.nav li:hover {
   opacity: 0.5;
 }
 
-header .shop-cart-button{
+header .shop-cart-button {
   float: right;
   cursor: pointer;
   transition: color, transform 500ms ease;
 }
 
 header .shop-cart-button:hover,
-header .shop-cart-button.active{
+header .shop-cart-button.active {
   color: #dc3d3d;
   transform: scale(1.5);
 }
 
-header .shop-cart{
+header .shop-cart {
   position: absolute;
   top: 30px;
   right: 0;
   width: 450px;
-  min-height: 100px;
+  padding: 30px;
+  padding-bottom: 0;
   background-color: #fafafa;
   -webkit-box-shadow: 4px 5px 15px -7px #606060;
   box-shadow: 4px 5px 15px -7px #606060;
   z-index: 3;
 }
 
-header .presentation{
+header .shop-cart .empty h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item img {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 2opx;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item p {
+  color: #797979;
+  font-weight: 600;
+}
+
+header .presentation {
   margin: 50px 0;
   background: url('./img/bg.jpg') no-repeat;
   width: 100%;
@@ -72,7 +105,8 @@ header .presentation{
   background-color: #bcbcbc;
   position: relative;
 }
-header .presentation::after{
+
+header .presentation::after {
   content: 'Best products for your home';
   position: absolute;
   top: 100px;
@@ -82,7 +116,8 @@ header .presentation::after{
   font-weight: 600;
   color: #fff;
 }
-header .presentation::before{
+
+header .presentation::before {
   content: 'low prices';
   position: absolute;
   top: 250px;
@@ -93,14 +128,14 @@ header .presentation::before{
   color: #fff;
 }
 
-main{
+main {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-main .item{
+main .item {
   width: 30%;
   margin-bottom: 50px;
   background-color: #f5f5f5;
@@ -108,23 +143,29 @@ main .item{
   position: relative;
   padding-bottom: 20px;
 }
-main .item img{
+
+main .item img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   transition: transform 500ms ease;
 }
-main .item img:hover{
+
+main .item img:hover {
   transform: scale(1.05);
 }
 
-main h2, main p, main b{
+main h2,
+main p,
+main b {
   margin: 10px 20px;
   color: #333;
 }
-main b{
-  color:#04ac55;
+
+main b {
+  color: #04ac55;
 }
-main .add-to-cart{
+
+main .add-to-cart {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -140,11 +181,11 @@ main .add-to-cart{
   transition: transform 500ms ease;
 }
 
-main .add-to-cart:hover{
+main .add-to-cart:hover {
   transform: scale(1.5) translateY(-5px);
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: 100px;
 }
